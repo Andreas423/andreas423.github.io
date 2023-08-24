@@ -7,21 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
             <div class="navbar-nav">
-              <a class="nav-link active" href="#">1</a>
-              <a class="nav-link" href="#">2</a>
-              <a class="nav-link" href="#">3</a>
+              <a class="nav-link active" href="#first">First</a>
+              <a class="nav-link" href="#second">Second</a>
+              <a class="nav-link" href="#third">Third</a>
             </div>
           </div>
         </div>
       </nav>
 
+      <div class="container" data-bs-spy="scroll" data-bs-target="#navbar">
+        <h1 id="first" class="h1 text-center text-primary">First</h1>
+        <p class="text-center text-secondary" style="margin-bottom: 100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ipsum cumque qui neque ad odio est consequuntur perferendis in atque similique nesciunt animi vel voluptate at adipisci exercitationem numquam. Autem!</p>
+
+        <h1 id="second" class="h1 text-center text-primary">Second</h1>
+        <p class="text-center text-secondary" style="margin-bottom: 100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ipsum cumque qui neque ad odio est consequuntur perferendis in atque similique nesciunt animi vel voluptate at adipisci exercitationem numquam. Autem!</p>
+
+        <h1 id="third" class="h1 text-center text-primary">Third</h1>
+        <p class="text-center text-secondary" style="margin-bottom: 100vh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ipsum cumque qui neque ad odio est consequuntur perferendis in atque similique nesciunt animi vel voluptate at adipisci exercitationem numquam. Autem!</p>
+      </div>
+      
       <script src="bootstrap.min.js"></script>
 </body>
 </html>
