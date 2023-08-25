@@ -1,3 +1,4 @@
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute("data-bs-theme", "dark");
-}
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", event => {
+    const preferredColorScheme = event.matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-bs-theme", preferredColorScheme);
+});
