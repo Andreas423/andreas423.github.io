@@ -10,3 +10,7 @@
     height: 300px;
     background-color: var(--bs-gray-500);
 }
+
+.padding-top {
+    padding-top: 75px;
+}
