@@ -6,12 +6,12 @@
     vertical-align: -.125em;
 }
 
-.img, .project-details {
+.project-details {
     width: 500px;
 }
 
 .img {
-    height: 300px;
+    height: 300px !important;
     background-color: var(--bs-gray-500);
 }
 
